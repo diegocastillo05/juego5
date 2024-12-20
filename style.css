@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contentJuego5 {
+  min-height: 100vh;
+  background-color: #000;
+  padding: 50px 0;
+}
+
+.contentJuego5 .container {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contentJuego5 .espacio {
+  position: relative;
+  max-width: 1202px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.contentJuego5 .cards {
+  display: flex;
+  align-items: stretch;
+  /*display: grid;
+  grid-template-columns: repeat(3, 1fr);*/
+}
+
+.contentJuego5 .cards .card {
+  border-radius: 20px;
+  padding: 30px 40px 40px 40px;
+  width: 33%;
+  border: 3px solid #000;
+}
+
+.contentJuego5 .cards .card.active {
+  border: 3px solid #6c6c6c;
+}
+
+.contentJuego5 .cards .card.active.true {
+  border: 3px solid #20b038;
+}
+
+.contentJuego5 .cards .card.true .texto div {
+  color: #20b038;
+  border: 1px solid #20b038;
+}
+
+.contentJuego5 .cards .card.true .texto div.junto {
+  color: initial;
+  border: initial;
+}
+
+.contentJuego5 .cards .card p {
+  color: #fff;
+  text-align: center;
+  font-family: "AMX", "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  padding-top: 25px;
+}
+.contentJuego5 .cards .card .texto {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  column-gap: 18px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contentJuego5 .cards .card .texto .junto {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6px;
+  row-gap: 20px;
+  justify-content: center;
+}
+
+.contentJuego5 .cards .card .texto .letra {
+  color: #f4f4f4;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "AMX", "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  background-color: #000;
+  z-index: 2;
+}
+
+.contentJuego5 .cards .card.false .texto div {
+  color: #da291c;
+  border: 1px solid #da291c;
+}
+
+.contentJuego5 .cards .card.false .texto div.junto {
+  color: initial;
+  border: initial;
+}
+/*
+.contentJuego5 .cards .card .texto div::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: -1;
+}*/
+
+.contentJuego5 .cards .card .texto div.space {
+  border: none;
+  width: 14px;
+}
+
+.contentJuego5 .cards .card .contentImg img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.contentJuego5 .btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 12px;
+}
+
+.contentJuego5 .btns button {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 40px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  background: #9b9b9b;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  pointer-events: none;
+}
+
+.contentJuego5 .btns button.active {
+  background: #da291c;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.contentJuego5 .part1 {
+  max-width: 1202px;
+  margin: 0 auto;
+}
+
+.contentJuego5 .part1 h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "AMX", "Roboto", sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contentJuego5 .part1 p {
+  color: #fff;
+  font-family: "AMX", "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media (min-width: 640px) {
+  .contentJuego5 .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contentJuego5 .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contentJuego5 .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .contentJuego5 .container {
+    max-width: 1260px;
+  }
+}
+
+@media (min-width: 1460px) {
+  .contentJuego5 .container {
+    max-width: 1460px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contentJuego5 .part1 h2 {
+    font-size: 29px;
+  }
+  .contentJuego5 .part1 p {
+    font-size: 14px;
+  }
+  .contentJuego5 .espacio {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .contentJuego5 .cards .card p {
+    font-size: 18px;
+  }
+  .contentJuego5 .cards .card {
+    border-radius: 20px;
+    padding: 22px 20px 30px 20px;
+  }
+  .contentJuego5 .cards .card .texto .letra {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentJuego5 .cards {
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .contentJuego5 .cards .card {
+    width: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .contentJuego5 .btns {
+    margin-top: 20px;
+  }
+  .contentJuego5 .part1 h2 {
+    font-size: 24px;
+  }
+  .contentJuego5 .part1 p {
+    font-size: 14px;
+  }
+  .contentJuego5 .cards .card p {
+    font-size: 14px;
+  }
+}
